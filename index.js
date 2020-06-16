@@ -79,10 +79,11 @@ Your function should remove a flavor from the end of the array and console.log t
 
 For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/
 
-function removeLastFlavor(/*code here*/) {
-  /*code here*/
+function removeLastFlavor(arr) {
+    arr.pop();
+    console.log(arr)
 }
-
+removeLastFlavor(originalFlavors);
 /* Task 4: Write a function that returns a flavor at a given index in the array.
 
 Your function should accept:
