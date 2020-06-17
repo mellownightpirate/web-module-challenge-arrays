@@ -80,8 +80,8 @@ Your function should remove a flavor from the end of the array and console.log t
 For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/
 
 function removeLastFlavor(arr) {
-    arr.pop();
-    console.log(arr)
+  arr.pop();
+  console.log(arr);
 }
 removeLastFlavor(originalFlavors);
 /* Task 4: Write a function that returns a flavor at a given index in the array.
@@ -94,7 +94,7 @@ Your function should accept:
 For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully. */
 
 function getFlavorByIndex(arr, i) {
-    return arr[i];
+  return arr[i];
 }
 console.log(getFlavorByIndex(originalFlavors, 2));
 
@@ -111,10 +111,13 @@ Hint: You can use .splice() for this
 
 */
 
-function removeFlavorByName(/*code here*/) {
-  /*code here*/
+function removeFlavorByName(arr, string) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === string) {
+      arr.splice(i, 1);
+    }
+  }
 }
-
 /* Task 6: With all of these changes going on, we don't want to lose track of the actual, original 31 flavors. Write a function called copy that makes a copy of the array. 
 
 Your function should accept: 
